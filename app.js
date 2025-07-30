@@ -8,7 +8,7 @@ const app = express()
 
 // Middlewares
 app.use(cors({
-  origin: '*'
+  origin: 'https://itransition-task4.netlify.app'
 }))
 app.use(logger('dev'))
 app.use(express.json())
