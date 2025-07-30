@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended: false})) //will experience run without it
 app.use('/api/users', usersRouter)
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the API!');
+  res.send('Welcome to the I-transition Task 4 API');
 });
 
 
