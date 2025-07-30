@@ -25,7 +25,7 @@ router.post('/register', async (req, res) => {
 
   } catch (error) {
     // console.log(error);
-    res.status(500).json({ message: 'Server Error' })
+    res.status(500).json({ message: 'User Already registered using this email' })
 
   }
 })
@@ -63,7 +63,7 @@ router.post('/login', async (req, res) => {
 
   } catch (error) {
     console.log("Login Error:", error);
-    res.status(500).json({ message: 'Login failed due to Server Interuption' })
+    res.status(500).json({ message: 'Login failed due to Server Interruption' })
   }
 })
 
